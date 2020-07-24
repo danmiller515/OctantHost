@@ -1,0 +1,115 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- ****************************** -->
+    <!-- ** Image/Text Button Styles ** -->
+    <!-- ****************************** -->
+    <!-- Image/Text Button Border -->
+    <Style TargetType="Border"
+         x:Key="ButtonImageTextBorderStyle">
+        <Setter Property="Margin"
+            Value="4" />
+        <Setter Property="BorderBrush"
+            Value="Gray" />
+        <Setter Property="BorderThickness"
+            Value="2" />
+        <Setter Property="HorizontalAlignment"
+            Value="Center" />
+        <Setter Property="CornerRadius"
+            Value="50" />
+        <Setter Property="Width"
+            Value="32" />
+        <Setter Property="Height"
+            Value="32" />
+        <Setter Property="Background"
+            Value="Transparent" />
+    </Style>
+    <!-- Image/Text Button Image -->
+    <Style TargetType="Image"
+         x:Key="ButtonImageTextImageStyle">
+        <Setter Property="Margin"
+            Value="0" />
+    </Style>
+    <!-- Image/Text Button TextBlock -->
+    <Style TargetType="TextBlock"
+         x:Key="ButtonImageTextTextBlockStyle">
+        <Setter Property="Margin"
+            Value="2" />
+        <Setter Property="Foreground"
+            Value="White" />
+        <Setter Property="HorizontalAlignment"
+            Value="Center" />
+        <Setter Property="FontSize"
+            Value="9" />
+    </Style>
+    <!-- Border color while hovering over button -->
+    <Color x:Key="ButtonImageTextBorderHoverColor">#005B82</Color>
+    <!-- Background color while hovering over button -->
+    <Color x:Key="ButtonImageTextBackHoverColor">#005B82</Color>
+    <!-- Thickness while hovering over button -->
+    <Thickness x:Key="ButtonImageTextHoverThickness">4,2,4,4</Thickness>
+
+    <!-- Image With No Border -->
+    <Style TargetType="Border"
+         x:Key="ButtonImageNoBorderStyle">
+        <Setter Property="Margin"
+            Value="0" />
+        <Setter Property="BorderBrush"
+            Value="White" />
+        <Setter Property="BorderThickness"
+            Value="0" />
+        <Setter Property="HorizontalAlignment"
+            Value="Center" />
+        <Setter Property="Width"
+            Value="32" />
+        <Setter Property="Height"
+            Value="22" />
+        <Setter Property="Background"
+            Value="Transparent" />
+    </Style>
+    <Color x:Key="ButtonImageNoBorderBackHoverColor">#005B82</Color>
+
+    <Style TargetType="Border"
+         x:Key="MoveBarStyle">
+        <Setter Property="Margin"
+            Value="0" />
+        <Setter Property="BorderBrush"
+            Value="White" />
+        <Setter Property="BorderThickness"
+            Value="0" />
+        <Setter Property="HorizontalAlignment"
+            Value="Center" />
+        <Setter Property="Height"
+            Value="22" />
+        <Setter Property="Background"
+            Value="Transparent" />
+    </Style>
+
+    <!-- Button With Border -->
+    <Style TargetType="Border"
+         x:Key="ButtonWithBorderStyle">
+        <Setter Property="Margin"
+            Value="0" />
+        <Setter Property="BorderBrush"
+            Value="Gray" />
+        <Setter Property="BorderThickness"
+            Value="2" />
+        <Setter Property="HorizontalAlignment"
+            Value="Center" />
+        <Setter Property="Height"
+            Value="32" />
+        <Setter Property="Background"
+            Value="Transparent" />
+    </Style>
+    <!-- Image/Text Button TextBlock -->
+    <Style TargetType="TextBlock"
+         x:Key="ButtonWithBorderTextBlockStyle">
+        <Setter Property="Margin"
+            Value="4" />
+        <Setter Property="Foreground"
+            Value="Black" />
+        <Setter Property="HorizontalAlignment"
+            Value="Center" />
+        <Setter Property="FontSize"
+            Value="15" />
+    </Style>
+</ResourceDictionary>

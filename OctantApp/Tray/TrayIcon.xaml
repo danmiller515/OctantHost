@@ -1,0 +1,32 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:tb="http://www.hardcodet.net/taskbar"
+                    xmlns:local="clr-namespace:OctantApp.Tray">
+    
+    <ContextMenu x:Shared="false" x:Key="SysTrayMenu">
+        <MenuItem Header="New Octant Window" Command="{Binding NewOctantWindowCommand}" />
+        <Separator />
+        <MenuItem Header="{Binding Status}" >
+            <MenuItem.Icon>
+                <Image RenderOptions.BitmapScalingMode="HighQuality" Width="10" Height="10" Source="{Binding StatusImage}" ></Image>
+            </MenuItem.Icon>
+        </MenuItem>
+        <Separator />
+        <MenuItem Header="Start Octant" Command="{Binding StartOctantCommand}" />
+        <MenuItem Header="Stop Octant" Command="{Binding StopOctantCommand}" />
+        <MenuItem Header="Restart Octant" Command="{Binding RestartOctantCommand}" />
+        <Separator />
+        <MenuItem Header="Exit" Command="{Binding ExitCommand}" />
+    </ContextMenu>
+
+    <tb:TaskbarIcon x:Key="NotifyIcon"
+                  IconSource="/Icon/Octant.ico"
+                  ToolTipText="Octant Host"
+                  DoubleClickCommand="{Binding ShowWindowCommand}"
+                  ContextMenu="{StaticResource SysTrayMenu}">
+        <tb:TaskbarIcon.DataContext>
+            <local:IconViewModel />
+        </tb:TaskbarIcon.DataContext>
+    </tb:TaskbarIcon>
+    
+</ResourceDictionary>
