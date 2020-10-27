@@ -30,7 +30,7 @@
 
   <ItemGroup>
     <PackageReference Include="CefSharp.Common" Version="83.4.20" />
-    <PackageReference Include="CefSharp.Wpf" Version="83.4.20" />
+    <PackageReference Include="CefSharp.Wpf" Version="85.3.130" />
     <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.0.8" />
   </ItemGroup>
 
