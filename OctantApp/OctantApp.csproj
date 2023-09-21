@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CefSharp.Common" Version="83.4.20" />
+    <PackageReference Include="CefSharp.Common" Version="116.0.230" />
     <PackageReference Include="CefSharp.Wpf" Version="83.4.20" />
     <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.0.8" />
   </ItemGroup>
